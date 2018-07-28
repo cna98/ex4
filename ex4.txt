@@ -1,0 +1,25 @@
+
+//تشخیص دادن قائم الزاویه بودن یا نبودن
+
+package ex4;
+
+import java.util.Scanner;
+public class Ex4 {
+	
+	public static void main(String[]args)
+	{
+		System.out.print("Enter three number :\t");
+		Scanner input = new Scanner(System.in);
+		int num1 , num2 , num3;
+		num1 = input.nextInt();
+		num2 = input.nextInt();
+		num3 = input.nextInt();
+		
+		if(((num1*num1) + (num2*num2) == (num3*num3)) || ((num2*num2)+(num3*num3) ==(num1*num1)) || ((num1*num1)+(num3*num3) == (num2*num2)))
+				
+					System.out.print("triangle is right angle");
+				
+		else
+			System.out.print("triangle is not right angle");
+	}
+}
